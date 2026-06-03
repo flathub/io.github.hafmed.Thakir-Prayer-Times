@@ -1,20 +1,19 @@
-    app-id: io.github.hafmed.Thakir-Prayer-Times
-    runtime: org.kde.Platform
-    runtime-version: "6.9"
-    sdk: org.kde.Sdk
-    command: thakir_prayer_times
-    finish-args:
-        - --share=ipc
-        - --socket=fallback-x11
-        - --socket=wayland
-        - --device=dri
-        - --socket=pulseaudio
-        - --talk-name=org.kde.StatusNotifierWatcher
-    modules:
-      - name: thakir_prayer_times
-        buildsystem: cmake-ninja
-        sources:
-          - type: archive
-            url: https://github.com/hafmed/Thakir-Prayer-Times-QWidget/archive/refs/tags/v2.0.9-release2.tar.gz
-            sha256: 23f1c2a1fcf1ce42996cd480227f5920330ff94e08cfba37e95404a9f9762d90
-
+app-id: io.github.hafmed.Thakir-Prayer-Times
+runtime: org.kde.Platform
+runtime-version: "6.10"
+sdk: org.kde.Sdk
+command: thakir_prayer_times
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --socket=pulseaudio
+  - --talk-name=org.kde.StatusNotifierWatcher
+modules:
+  - name: thakir_prayer_times
+    buildsystem: cmake-ninja
+    sources:
+      - type: archive
+        url: https://github.com/hafmed/Thakir-Prayer-Times-QWidget/archive/refs/tags/v2.0.9-release2.tar.gz
+        sha256: 23f1c2a1fcf1ce42996cd480227f5920330ff94e08cfba37e95404a9f9762d90
